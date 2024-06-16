@@ -19,5 +19,5 @@ resource "azuread_service_principal" "aksapimsp" {
 resource "azuread_service_principal_password" "aksapimPass" {
   service_principal_id = "${azuread_service_principal.aksapimsp.id}"
   value                = "${random_string.sp-password.result}"
-  end_date             = "2020-01-01T01:02:03Z"
+  end_date             = "2025-01-01T01:02:03Z"
 }
